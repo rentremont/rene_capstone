@@ -1,0 +1,2228 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0511.1508                               -->
+<workbook original-version='18.1' source-build='2023.1.2 (20231.23.0511.1508)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.DatagraphCoreV1.true...DatagraphCoreV1 />
+    <_.fcp.DatagraphNodeDashboardZoneVisibilityV1.true...DatagraphNodeDashboardZoneVisibilityV1 />
+    <_.fcp.DatagraphNodeSingleValueFieldV1.true...DatagraphNodeSingleValueFieldV1 />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+    <ZoneVisibilityControl />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='disneylist2.csv+ (Multiple Connections)' inline='true' name='federated.0hl7buc0hjhico14xuylk0gp48oj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='disneylist2' name='textscan.1lc3or41j5b2fd191t6kb0ux4f8x'>
+            <connection class='textscan' directory='C:/Users/neyan/NSS/Capstone/rene_capstone/data' filename='disneylist2.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='adjusted' name='textscan.0xiqyx01n0g3mo1dcbtmy11klq5f'>
+            <connection class='textscan' directory='C:/Users/neyan/NSS/Capstone/rene_capstone/data' filename='adjusted.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0xiqyx01n0g3mo1dcbtmy11klq5f' name='adjusted.csv' table='[adjusted#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Rank' ordinal='1' />
+            <column datatype='string' name='Title' ordinal='2' />
+            <column datatype='real' name='Adj. Lifetime Gross' ordinal='3' />
+            <column datatype='real' name='Lifetime Gross' ordinal='4' />
+            <column datatype='integer' name='Est. Num Tickets' ordinal='5' />
+            <column datatype='integer' name='Year' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1lc3or41j5b2fd191t6kb0ux4f8x' name='disneylist2.csv' table='[disneylist2#csv]' type='table'>
+            <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='title' ordinal='1' />
+              <column datatype='string' name='category' ordinal='2' />
+              <column datatype='integer' name='lifetime_gross_us_ca' ordinal='3' />
+              <column datatype='date' name='release_date' ordinal='4' />
+              <column datatype='integer' name='max_theaters' ordinal='5' />
+              <column datatype='string' name='total_days' ordinal='6' />
+              <column datatype='integer' name='opening_weekend' ordinal='7' />
+              <column datatype='integer' name='opening_theaters' ordinal='8' />
+              <column datatype='string' name='distributor' ordinal='9' />
+              <column datatype='integer' name='year' ordinal='10' />
+              <column datatype='real' name='avg_price' ordinal='11' />
+              <column datatype='real' name='adj_price' ordinal='12' />
+              <column datatype='real' name='inflation_rate' ordinal='13' />
+              <column datatype='integer' name='year_dif' ordinal='14' />
+              <column datatype='real' name='num_tickets' ordinal='15' />
+              <column datatype='real' name='adjusted_total' ordinal='16' />
+              <column datatype='string' name='style' ordinal='17' />
+              <column datatype='string' name='F19' ordinal='18' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0xiqyx01n0g3mo1dcbtmy11klq5f' name='adjusted.csv' table='[adjusted#csv]' type='table'>
+            <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='Rank' ordinal='1' />
+              <column datatype='string' name='Title' ordinal='2' />
+              <column datatype='real' name='Adj. Lifetime Gross' ordinal='3' />
+              <column datatype='real' name='Lifetime Gross' ordinal='4' />
+              <column datatype='integer' name='Est. Num Tickets' ordinal='5' />
+              <column datatype='integer' name='Year' ordinal='6' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Adj. Lifetime Gross]' value='[adjusted.csv].[Adj. Lifetime Gross]' />
+          <map key='[Est. Num Tickets]' value='[adjusted.csv].[Est. Num Tickets]' />
+          <map key='[F1 (adjusted.csv)]' value='[adjusted.csv].[F1]' />
+          <map key='[F19]' value='[disneylist2.csv].[F19]' />
+          <map key='[F1]' value='[disneylist2.csv].[F1]' />
+          <map key='[Lifetime Gross]' value='[adjusted.csv].[Lifetime Gross]' />
+          <map key='[Rank]' value='[adjusted.csv].[Rank]' />
+          <map key='[Title]' value='[adjusted.csv].[Title]' />
+          <map key='[Year]' value='[adjusted.csv].[Year]' />
+          <map key='[adj_price]' value='[disneylist2.csv].[adj_price]' />
+          <map key='[adjusted_total]' value='[disneylist2.csv].[adjusted_total]' />
+          <map key='[avg_price]' value='[disneylist2.csv].[avg_price]' />
+          <map key='[category]' value='[disneylist2.csv].[category]' />
+          <map key='[distributor]' value='[disneylist2.csv].[distributor]' />
+          <map key='[inflation_rate]' value='[disneylist2.csv].[inflation_rate]' />
+          <map key='[lifetime_gross_us_ca]' value='[disneylist2.csv].[lifetime_gross_us_ca]' />
+          <map key='[max_theaters]' value='[disneylist2.csv].[max_theaters]' />
+          <map key='[num_tickets]' value='[disneylist2.csv].[num_tickets]' />
+          <map key='[opening_theaters]' value='[disneylist2.csv].[opening_theaters]' />
+          <map key='[opening_weekend]' value='[disneylist2.csv].[opening_weekend]' />
+          <map key='[release_date]' value='[disneylist2.csv].[release_date]' />
+          <map key='[style]' value='[disneylist2.csv].[style]' />
+          <map key='[title]' value='[disneylist2.csv].[title]' />
+          <map key='[total_days]' value='[disneylist2.csv].[total_days]' />
+          <map key='[year]' value='[disneylist2.csv].[year]' />
+          <map key='[year_dif]' value='[disneylist2.csv].[year_dif]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[adjusted.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lifetime_gross_us_ca</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lifetime_gross_us_ca]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>lifetime_gross_us_ca</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[release_date]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>release_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_theaters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[max_theaters]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>max_theaters</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_days</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_days]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>total_days</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opening_weekend</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[opening_weekend]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>opening_weekend</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opening_theaters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[opening_theaters]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>opening_theaters</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distributor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[distributor]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>distributor</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_price]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>avg_price</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adj_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[adj_price]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>adj_price</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inflation_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[inflation_rate]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>inflation_rate</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_dif</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_dif]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>year_dif</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_tickets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_tickets]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>num_tickets</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adjusted_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[adjusted_total]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>adjusted_total</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>style</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[style]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>style</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F19</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F19]</local-name>
+            <parent-name>[disneylist2.csv]</parent-name>
+            <remote-alias>F19</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (adjusted.csv)]</local-name>
+            <parent-name>[adjusted.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[adjusted.csv_700F26D9232448EC9F5051A9F0E1800F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[adjusted.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[adjusted.csv_700F26D9232448EC9F5051A9F0E1800F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[adjusted.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[adjusted.csv_700F26D9232448EC9F5051A9F0E1800F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adj. Lifetime Gross</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Adj. Lifetime Gross]</local-name>
+            <parent-name>[adjusted.csv]</parent-name>
+            <remote-alias>Adj. Lifetime Gross</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[adjusted.csv_700F26D9232448EC9F5051A9F0E1800F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lifetime Gross</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lifetime Gross]</local-name>
+            <parent-name>[adjusted.csv]</parent-name>
+            <remote-alias>Lifetime Gross</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[adjusted.csv_700F26D9232448EC9F5051A9F0E1800F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Est. Num Tickets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Est. Num Tickets]</local-name>
+            <parent-name>[adjusted.csv]</parent-name>
+            <remote-alias>Est. Num Tickets</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[adjusted.csv_700F26D9232448EC9F5051A9F0E1800F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[adjusted.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[adjusted.csv_700F26D9232448EC9F5051A9F0E1800F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bubble and lifetime gross' datatype='boolean' name='[Bubble and inflation (copy)_85568450086834177]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1]=&apos;bubble&apos; and [Parameters].[Parameter 2]=&apos;lifetime gross&apos;' />
+      </column>
+      <column caption='Bubble and inflation' datatype='boolean' name='[Calculation_85568450086350848]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1]=&apos;bubble&apos; and [Parameters].[Parameter 2]=&apos;adjusted inflation&apos;' />
+      </column>
+      <column caption='Title1' datatype='string' name='[Title]' role='dimension' type='nominal' />
+      <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='adjusted.csv' datatype='table' name='[__tableau_internal_object_id__].[adjusted.csv_700F26D9232448EC9F5051A9F0E1800F]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='disneylist2.csv' datatype='table' name='[__tableau_internal_object_id__].[disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E]' role='measure' type='quantitative' />
+      <column caption='Adj Price' datatype='real' name='[adj_price]' role='measure' type='quantitative' />
+      <column caption='Adjusted Total' datatype='real' name='[adjusted_total]' role='measure' type='quantitative' />
+      <column caption='Avg Price' datatype='real' name='[avg_price]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Distributor' datatype='string' name='[distributor]' role='dimension' type='nominal' />
+      <column caption='Inflation Rate' datatype='real' name='[inflation_rate]' role='measure' type='quantitative' />
+      <column caption='Lifetime Gross Us Ca' datatype='integer' name='[lifetime_gross_us_ca]' role='measure' type='quantitative' />
+      <column caption='Max Theaters' datatype='integer' name='[max_theaters]' role='measure' type='quantitative' />
+      <column caption='Num Tickets' datatype='real' name='[num_tickets]' role='measure' type='quantitative' />
+      <column caption='Opening Theaters' datatype='integer' name='[opening_theaters]' role='measure' type='quantitative' />
+      <column caption='Opening Weekend' datatype='integer' name='[opening_weekend]' role='measure' type='quantitative' />
+      <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+      <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;A&quot;' value='Animated' />
+          <alias key='&quot;L&quot;' value='Live' />
+        </aliases>
+      </column>
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Total Days' datatype='string' name='[total_days]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column caption='Year Dif' datatype='integer' name='[year_dif]' role='dimension' type='quantitative' />
+      <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Category,Style)' hidden='true' name='[Action (Category,Style)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[category]' />
+          <groupfilter function='level-members' level='[style]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Style,Title)' hidden='true' name='[Action (Style,Title)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[style]' />
+          <groupfilter function='level-members' level='[title]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:style:nk]' type='palette'>
+            <map to='#073e92'>
+              <bucket>&quot;L&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f5c75f'>
+              <bucket>&quot;A&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='chart type' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;bubble&quot;'>
+          <calculation class='tableau' formula='&quot;bubble&quot;' />
+        </column>
+        <column caption='metric' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;adjusted inflation&quot;'>
+          <calculation class='tableau' formula='&quot;adjusted inflation&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='adjusted.csv' id='adjusted.csv_700F26D9232448EC9F5051A9F0E1800F'>
+            <properties context=''>
+              <relation connection='textscan.0xiqyx01n0g3mo1dcbtmy11klq5f' name='adjusted.csv' table='[adjusted#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Rank' ordinal='1' />
+                  <column datatype='string' name='Title' ordinal='2' />
+                  <column datatype='real' name='Adj. Lifetime Gross' ordinal='3' />
+                  <column datatype='real' name='Lifetime Gross' ordinal='4' />
+                  <column datatype='integer' name='Est. Num Tickets' ordinal='5' />
+                  <column datatype='integer' name='Year' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='disneylist2.csv' id='disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E'>
+            <properties context=''>
+              <relation connection='textscan.1lc3or41j5b2fd191t6kb0ux4f8x' name='disneylist2.csv' table='[disneylist2#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='string' name='category' ordinal='2' />
+                  <column datatype='integer' name='lifetime_gross_us_ca' ordinal='3' />
+                  <column datatype='date' name='release_date' ordinal='4' />
+                  <column datatype='integer' name='max_theaters' ordinal='5' />
+                  <column datatype='string' name='total_days' ordinal='6' />
+                  <column datatype='integer' name='opening_weekend' ordinal='7' />
+                  <column datatype='integer' name='opening_theaters' ordinal='8' />
+                  <column datatype='string' name='distributor' ordinal='9' />
+                  <column datatype='integer' name='year' ordinal='10' />
+                  <column datatype='real' name='avg_price' ordinal='11' />
+                  <column datatype='real' name='adj_price' ordinal='12' />
+                  <column datatype='real' name='inflation_rate' ordinal='13' />
+                  <column datatype='integer' name='year_dif' ordinal='14' />
+                  <column datatype='real' name='num_tickets' ordinal='15' />
+                  <column datatype='real' name='adjusted_total' ordinal='16' />
+                  <column datatype='string' name='style' ordinal='17' />
+                  <column datatype='string' name='F19' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[title]' />
+              <expression op='[Title]' />
+            </expression>
+            <first-end-point object-id='disneylist2.csv_4380AC5C70674FAC8F3BDC52727C9B7E' />
+            <second-end-point object-id='adjusted.csv_700F26D9232448EC9F5051A9F0E1800F' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='chart type' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;bubble&quot;'>
+        <calculation class='tableau' formula='&quot;bubble&quot;' />
+        <members>
+          <member value='&quot;bubble&quot;' />
+        </members>
+      </column>
+      <column caption='metric' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;adjusted inflation&quot;'>
+        <calculation class='tableau' formula='&quot;adjusted inflation&quot;' />
+        <members>
+          <member value='&quot;adjusted inflation&quot;' />
+          <member value='&quot;lifetime gross&quot;' />
+        </members>
+      </column>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 2 (generated)' name='[Action2_266B39EECD3548B3BA41196628EAB97D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='10 adj' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='10 adj'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Top 10 Movies by Lifetime Gross Adjusted with Inflation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column datatype='real' name='[Adj. Lifetime Gross]' role='measure' type='quantitative' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[Adj. Lifetime Gross]' derivation='Sum' name='[sum:Adj. Lifetime Gross:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Category,Style)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_67F865232F0B4BE39481E243890FD70A]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[style]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Style,Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_4F2187CB883A4456AA0A371F927315FA]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[style]' />
+              <groupfilter function='level-members' level='[title]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Adj. Lifetime Gross])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:Adj. Lifetime Gross:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]</column>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Category,Style)]</column>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Style,Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='border-color' data-class='total' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' data-class='total' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:Adj. Lifetime Gross:qk]</cols>
+      </table>
+      <simple-id uuid='{D69119D5-DBAE-4A4F-A4D5-408731490CAE}' />
+    </worksheet>
+    <worksheet name='10 life'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Top 10 Movies based on Lifetime Gross</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Lifetime Gross Us Ca' datatype='integer' name='[lifetime_gross_us_ca]' role='measure' type='quantitative' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[lifetime_gross_us_ca]' derivation='Sum' name='[sum:lifetime_gross_us_ca:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Category,Style)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_67F865232F0B4BE39481E243890FD70A]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[style]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Style,Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_266B39EECD3548B3BA41196628EAB97D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[style]' />
+              <groupfilter function='level-members' level='[title]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([lifetime_gross_us_ca])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:lifetime_gross_us_ca:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]</column>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Category,Style)]</column>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Style,Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:lifetime_gross_us_ca:qk]' field-type='quantitative' max='989658844' min='-103113805' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:lifetime_gross_us_ca:qk]</cols>
+      </table>
+      <simple-id uuid='{AD602B2F-2CA1-454B-8931-BD8CA5E98BF5}' />
+    </worksheet>
+    <worksheet name='10 open'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Top 10 Movies by Opening Weekend Gross</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Opening Weekend' datatype='integer' name='[opening_weekend]' role='measure' type='quantitative' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[opening_weekend]' derivation='Sum' name='[sum:opening_weekend:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Style,Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_266B39EECD3548B3BA41196628EAB97D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[style]' />
+              <groupfilter function='level-members' level='[title]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([opening_weekend])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:opening_weekend:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]</column>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Style,Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='border-color' data-class='total' value='#d4d4d4' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:opening_weekend:qk]</cols>
+      </table>
+      <simple-id uuid='{50A8B3C5-91F0-4551-AD6F-02CCFB8406A6}' />
+    </worksheet>
+    <worksheet name='200 adj'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Top 200 Movies by Lifetime Gross (Adjusted for Inflation)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column datatype='real' name='[Adj. Lifetime Gross]' role='measure' type='quantitative' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[Adj. Lifetime Gross]' derivation='Sum' name='[sum:Adj. Lifetime Gross:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:style:nk]' />
+              <groupfilter function='member' level='[none:style:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+              <lod column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/asterisk' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:Adj. Lifetime Gross:qk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{603BD597-1870-464B-8F2B-C3384D925F20}' />
+    </worksheet>
+    <worksheet name='200 life'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Top 200 Movies by Lifetime Gross</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column datatype='real' name='[Lifetime Gross]' role='measure' type='quantitative' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[Lifetime Gross]' derivation='Sum' name='[sum:Lifetime Gross:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:year:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:Lifetime Gross:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:Lifetime Gross:qk]</column>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+              <lod column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:Lifetime Gross:qk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{FEB121AA-E52C-437C-8E8C-DF43AEB4729F}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column caption='Lifetime Gross Us Ca' datatype='integer' name='[lifetime_gross_us_ca]' role='measure' type='quantitative' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[lifetime_gross_us_ca]' derivation='Sum' name='[sum:lifetime_gross_us_ca:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]'>
+            <groupfilter count='600' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([lifetime_gross_us_ca])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+              <size column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:lifetime_gross_us_ca:qk]' />
+              <text column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EA6D54A9-6D6A-4DF8-85C8-8EC7F2B62D12}' />
+    </worksheet>
+    <worksheet name='Sheet 13'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column caption='Adjusted Total' datatype='real' name='[adjusted_total]' role='measure' type='quantitative' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[adjusted_total]' derivation='Sum' name='[sum:adjusted_total:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+              <size column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:adjusted_total:qk]' />
+              <text column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{61A25958-038A-4016-B131-F6CEB63A77F7}' />
+    </worksheet>
+    <worksheet name='adj style'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Lifetime Gross (Adjusted for Inflation) by Movie Style</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column caption='Adjusted Total' datatype='real' name='[adjusted_total]' role='measure' type='quantitative' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[adjusted_total]' derivation='Sum' name='[sum:adjusted_total:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:adjusted_total:qk]</cols>
+      </table>
+      <simple-id uuid='{19C1CED0-9964-474B-A37E-C05A1E192F54}' />
+    </worksheet>
+    <worksheet name='adj ticket'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Average Price for a Movie Ticket Adjusted for Inflation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column caption='Adj Price' datatype='real' name='[adj_price]' role='measure' type='quantitative' />
+            <column-instance column='[adj_price]' derivation='Avg' name='[avg:adj_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[avg:adj_price:qk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{47F5C1D9-5330-4E3C-92F9-BB7D16E4382A}' />
+    </worksheet>
+    <worksheet name='avg ticket'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Average Price for a Movie Ticket Each Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column-instance column='[avg_price]' derivation='Avg' name='[avg:avg_price:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Price' datatype='real' name='[avg_price]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='size' value='1.5932043790817261' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[avg:avg_price:qk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{855ECEB1-A730-4E38-AE96-6BC0602D94BE}' />
+    </worksheet>
+    <worksheet name='life category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Lifetime Gross by Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Lifetime Gross Us Ca' datatype='integer' name='[lifetime_gross_us_ca]' role='measure' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[lifetime_gross_us_ca]' derivation='Sum' name='[sum:lifetime_gross_us_ca:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Style,Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_266B39EECD3548B3BA41196628EAB97D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[style]' />
+              <groupfilter function='level-members' level='[title]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:category:nk]'>
+            <groupfilter function='level-members' level='[none:category:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:category:nk]</column>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[Action (Style,Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:category:nk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:lifetime_gross_us_ca:qk]</cols>
+      </table>
+      <simple-id uuid='{38A43FA6-8576-4CEB-9B6D-6DD536CC4E47}' />
+    </worksheet>
+    <worksheet name='life style'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Lifetime Gross by Movie Style</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column caption='Lifetime Gross Us Ca' datatype='integer' name='[lifetime_gross_us_ca]' role='measure' type='quantitative' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[lifetime_gross_us_ca]' derivation='Sum' name='[sum:lifetime_gross_us_ca:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:lifetime_gross_us_ca:qk]</cols>
+      </table>
+      <simple-id uuid='{BAE79237-B212-49AF-A20D-94C843FF4F74}' />
+    </worksheet>
+    <worksheet name='num theaters'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000'>Maximum number of theaters for each style since 1982</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='disneylist2.csv+ (Multiple Connections)' name='federated.0hl7buc0hjhico14xuylk0gp48oj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl7buc0hjhico14xuylk0gp48oj'>
+            <column caption='Max Theaters' datatype='integer' name='[max_theaters]' role='measure' type='quantitative' />
+            <column-instance column='[style]' derivation='None' name='[none:style:nk]' pivot='key' type='nominal' />
+            <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+            <column caption='Style' datatype='string' name='[style]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;A&quot;' value='Animated' />
+                <alias key='&quot;L&quot;' value='Live' />
+              </aliases>
+            </column>
+            <column-instance column='[max_theaters]' derivation='Sum' name='[sum:max_theaters:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[release_date]' derivation='Year' name='[yr:release_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[release_date]' derivation='Year' name='[yr:release_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[yr:release_date:ok]'>
+            <groupfilter from='1982' function='range' level='[yr:release_date:ok]' to='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0hl7buc0hjhico14xuylk0gp48oj].[yr:release_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hl7buc0hjhico14xuylk0gp48oj].[sum:max_theaters:qk]</rows>
+        <cols>[federated.0hl7buc0hjhico14xuylk0gp48oj].[yr:release_date:qk]</cols>
+      </table>
+      <simple-id uuid='{6F5BEE17-EBA9-467A-AD4C-71CD0721EF11}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size maxheight='700' maxwidth='1000' minheight='700' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97714' id='8' param='horz' type-v2='layout-flow' w='98400' x='800' y='1143'>
+            <zone h='97714' id='6' type-v2='layout-basic' w='98400' x='800' y='1143'>
+              <zone h='48857' id='5' name='10 adj' w='49200' x='800' y='1143'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48857' id='18' name='10 open' w='49200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48857' id='19' name='10 life' w='49200' x='50000' y='1143'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48857' id='22' param='C:/Users/neyan/NSS/Capstone/rene_capstone/images/disneycircle.jpg' type-v2='bitmap' w='49200' x='50000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8286' id='9' name='10 adj' pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type-v2='color' w='14000' x='51200' y='52286' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97714' id='28' param='vert' type-v2='layout-flow' w='98400' x='800' y='1143'>
+                <zone fixed-size='280' h='48857' id='5' is-fixed='true' name='10 adj' w='49200' x='800' y='1143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8286' id='9' name='10 adj' pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type-v2='color' w='14000' x='51200' y='52286'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48857' id='19' is-fixed='true' name='10 life' w='49200' x='50000' y='1143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48857' id='18' is-fixed='true' name='10 open' w='49200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48857' id='22' is-fixed='true' param='C:/Users/neyan/NSS/Capstone/rene_capstone/images/disneycircle.jpg' type-v2='bitmap' w='49200' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2AF5AE06-90D0-442A-BB4E-2A800D5961B8}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='life style' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='adj style' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='8250' id='8' name='life style' pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='14' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='adj style' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='life style' w='82400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='8' name='life style' pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{42727B51-CEB1-441E-9ADB-08987641C2D5}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='9' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='7' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='adj ticket' w='41200' x='42000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='5' name='avg ticket' w='41200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='6' name='num theaters' w='41200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='11' param='C:/Users/neyan/NSS/Capstone/rene_capstone/images/free-ticket-1855957-1574163.png' type-v2='bitmap' w='41200' x='42000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='8250' id='10' name='num theaters' pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='6' is-fixed='true' name='num theaters' w='41200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='10' name='num theaters' pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='adj ticket' w='41200' x='42000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='5' is-fixed='true' name='avg ticket' w='41200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='11' is-fixed='true' param='C:/Users/neyan/NSS/Capstone/rene_capstone/images/free-ticket-1855957-1574163.png' type-v2='bitmap' w='41200' x='42000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1115B438-FDEB-473C-A8CD-A46680D89CF7}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='metric' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;adjusted inflation&quot;'>
+          <calculation class='tableau' formula='&quot;adjusted inflation&quot;' />
+          <members>
+            <member value='&quot;adjusted inflation&quot;' />
+            <member value='&quot;lifetime gross&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' hidden-by-user='true' id='3' name='Sheet 12' w='41200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='9' name='Sheet 13' w='41200' x='42000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='8250' id='8' name='Sheet 12' pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='11' mode='compact' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='16000' x='83200' y='9250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{05AB775C-4C38-4FC6-9DD5-D7AAF57576DB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='10 adj'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4D45CA02-D2A4-4523-8CDD-6B4B93FDB011}' />
+    </window>
+    <window class='worksheet' name='10 life'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C1EEFE1A-E49A-4BE4-8EEA-0DF58128C1AD}' />
+    </window>
+    <window class='worksheet' name='life category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D65F0027-519F-4884-97EE-3AF7D58E776B}' />
+    </window>
+    <window class='worksheet' name='life style'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5089898F-847F-4C65-A157-ABBF9C5FB772}' />
+    </window>
+    <window class='worksheet' name='adj style'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2C84BF58-351B-46DA-BF38-8109B4CA5399}' />
+    </window>
+    <window class='worksheet' name='10 open'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{38B3F466-2379-426D-8254-A58ADC8C67BB}' />
+    </window>
+    <window class='worksheet' name='num theaters'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{637F762D-2080-416C-8A31-2AE3B9816F34}' />
+    </window>
+    <window class='worksheet' name='avg ticket'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE3B4305-4030-4E5D-9EF1-3B4DA4FD326D}' />
+    </window>
+    <window class='worksheet' name='adj ticket'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{67CE9C5D-EC28-40C0-981A-4B95FA5B1830}' />
+    </window>
+    <window class='worksheet' name='200 adj'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F3E2321-ABF5-4719-A19C-60CF8CC191AD}' />
+    </window>
+    <window class='worksheet' name='200 life'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0DF43937-F1F2-4467-8EE0-9276F60BF04D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='10 adj'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='10 life' />
+        <viewpoint name='10 open' />
+      </viewpoints>
+      <active id='22' />
+      <simple-id uuid='{DC481FB1-38EE-47F9-877D-35E065B977B4}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='adj style' />
+        <viewpoint name='life style' />
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{140B14C7-202A-4E0C-821E-522F40A9C16F}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='adj ticket'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='avg ticket'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='num theaters'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{33839506-D6E1-4035-8A43-19BC887E17D1}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C8054BDA-5135-4347-81F5-9323365A58C7}' />
+    </window>
+    <window class='worksheet' name='Sheet 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hl7buc0hjhico14xuylk0gp48oj].[none:style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{67970045-6008-4328-94FC-317FF0A03BFF}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='Sheet 12' />
+        <viewpoint name='Sheet 13' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{72D13643-046A-4456-83E6-8A8D06D3B77B}' />
+    </window>
+  </windows>
+  <_.fcp.DatagraphCoreV1.true...datagraph>
+    <graph>
+      <properties>
+        <default-execution-subgraph-guid value='4ca4675c-8aab-47b7-826d-92427d74e6e1' />
+      </properties>
+      <node-execution-subgraphs>
+        <pair execution-subgraph-guid='4ca4675c-8aab-47b7-826d-92427d74e6e1' node-guid='543c8132-b02a-42d6-a220-03d1bfee5859' />
+        <pair execution-subgraph-guid='4ca4675c-8aab-47b7-826d-92427d74e6e1' node-guid='640237e7-d4f2-4a8d-9a25-52cd37bd3683' />
+      </node-execution-subgraphs>
+      <nodes>
+        <_.fcp.DatagraphNodeDashboardZoneVisibilityV1.true...dashboard-zone-visibility-node dashboard-identifier='{05AB775C-4C38-4FC6-9DD5-D7AAF57576DB}' node-guid='543c8132-b02a-42d6-a220-03d1bfee5859' visibility-input-guid='c5766687-41f5-4698-8ec1-60daf35dfa18' zone-id='3' />
+        <_.fcp.DatagraphNodeSingleValueFieldV1.true...single-value-field-node fieldname='[federated.0hl7buc0hjhico14xuylk0gp48oj].[Bubble and inflation (copy)_85568450086834177]' fieldname-input-guid='7fe1d9b4-87c8-4060-bb6d-fc0261104f5d' node-guid='640237e7-d4f2-4a8d-9a25-52cd37bd3683' value-output-guid='d3738822-7907-4531-9086-d7c3438390f7' />
+      </nodes>
+      <edges>
+        <edge from='d3738822-7907-4531-9086-d7c3438390f7' to='c5766687-41f5-4698-8ec1-60daf35dfa18' />
+      </edges>
+      <pin-values />
+    </graph>
+  </_.fcp.DatagraphCoreV1.true...datagraph>
+</workbook>
