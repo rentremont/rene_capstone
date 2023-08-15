@@ -1,5 +1,8 @@
 # Disney Movies
 
+## Google Slides presentation
+Link: https://docs.google.com/presentation/d/1_Kj1y6h7mOUhLAD270fGidiX9MQwUKYWn6J_pkyTKjU/edit#slide=id.g260f78108b2_1_58
+
 ## Tableau Dashboard
 Link:
 
