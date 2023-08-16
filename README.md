@@ -4,7 +4,7 @@
 Link: https://docs.google.com/presentation/d/e/2PACX-1vQdqTkVQBUO6Cz1RQQ7EIZJ-fBmYw1vVEaczOOU2gp-QSj7lhLbo6MNa86BDWpcshMo_6IzMiFN9xA4/pub?start=false&loop=false&delayms=3000
 
 ## Tableau Dashboard
-Link:
+Link:https://public.tableau.com/views/disney_dashboard-final/Story1?:language=en-US&:display_count=n&:origin=viz_share_link
 
 ## Table of Contents
 * [Tableau Dashboard](#Tableau-dashboard)
